@@ -1,0 +1,21 @@
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: #777777;
+}
+
+a:link {
+	color: #777777;
+}
+a:visited {
+	color: #999999;
+}
+a:hover {
+	color: #777777;
+}
+a:active {
+	color: #777777;
+}
