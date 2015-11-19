@@ -11,7 +11,7 @@
 
 <link href="gallery1.css" rel="stylesheet">
 
-<title>Agnes S. Smith Photography</title>
+<title>Agnese Gutovska Photography</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="jquery.bxslider.min.js"></script>
@@ -37,7 +37,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="index.html">Agnes S Smith</a>
+      <a class="navbar-brand" href="index.html">Agnese Gutovska Photography</a>
 
     </div>
 
@@ -78,39 +78,39 @@
     <ul>
       <a href="#" class="close"></a>
       <li>
-        <a href="#item02">
+        <a href="#img1">
           <img src="gallery/images/connor/connor1.jpg" alt="">
         </a>
       </li>
 
       <li>
-        <a href="#item02">
+        <a href="#img2">
           <img src="gallery/images/connor/connor2.jpg" alt="">
         </a>
       </li>
 
       <li>
-        <a href="#item02">
+        <a href="#img3">
           <img src="gallery/images/connor/connor3.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="image" href="#item01">
+        <a class="image" href="#img4">
           <img src="gallery/images/connor/connor4.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="image" href="#item02">
+        <a class="image" href="#img5">
           <img src="gallery/images/connor/connor5.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="image" href="#item01">
+        <a class="image" href="#img6">
           <img src="gallery/images/connor/connor7.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="image" href="#item01">
+        <a class="image" href="#img7">
           <img src="gallery/images/connor/connor6.jpg" alt="">
         </a>
       </li>
@@ -118,36 +118,106 @@
   </div> <!-- / row -->
 
   <!-- Item 01 -->
-  <div id="item01" class="port">
+  <div id="img1" class="port">
   
     <div class="row">
-      <div class="description">
-        <h1>Item 01</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-      </div>
 
-        <img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1379781/winterletters-jeremiahbritton-dribbble.png" alt="">
+        <img src="gallery/images/connor/connor1.jpg" alt="">
       </div>
     </div> <!-- / row -->
 
-  </div> <!-- / Item 02 -->
+  </div> <!-- / Item 01 -->
 
   <!-- Item 02 -->
-  <div id="item02" class="port">
+  <div id="img2" class="port">
   
     <div class="row">
-      <div class="description">
-        <h1>Item 02</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+
+        <img src="gallery/images/connor/connor2.jpg" alt="">
       </div>
-      <img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/404704/wontstopblue-womens-jeremiahbritton.jpg" alt="">
     </div> <!-- / row -->
 
   </div> <!-- / Item 02 -->
 
-</section> <!-- / projects -->
+    <!-- Item 03 -->
+  <div id="img3" class="port">
+  
+    <div class="row">
 
+        <img src="gallery/images/connor/connor3.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
 
+  </div> <!-- / Item 03 -->
+
+    <!-- Item 04 -->
+  <div id="img4" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/connor/connor4.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 04 -->
+
+      <!-- Item 05 -->
+  <div id="img5" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/connor/connor5.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 05 -->
+
+        <!-- Item 06 -->
+  <div id="img6" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/connor/connor6.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 06 -->
+
+        <!-- Item 07 -->
+  <div id="img7" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/connor/connor7.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 07 -->
+
+  <!--JavaGallery-->
+
+  <script type="text/javascript">
+
+ $('.gallery ul li a').click(function() {
+     var itemID = $(this).attr('href');
+     $('.gallery ul').addClass('item_open');
+     $(itemID).addClass('item_open');
+     return false;
+ });
+ $('.close').click(function() {
+     $('.port, .gallery ul').removeClass('item_open');
+     return false;
+ });
+
+ $(".gallery ul li a").click(function() {
+     $('html, body').animate({
+         scrollTop: parseInt($("#top").offset().top)
+     }, 400);
+ });
+
+</script>
+
+<!--JavaGallery-->
 
 </body>  
   </html>

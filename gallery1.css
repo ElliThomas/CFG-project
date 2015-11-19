@@ -31,7 +31,7 @@ a {
   max-width: 100%;
   height: auto;
   padding: 0;
-  margin: 0;
+  top-margin: -100px;
 }
 
 .gallery ul li {
