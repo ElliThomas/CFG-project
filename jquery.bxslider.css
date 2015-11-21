@@ -393,3 +393,11 @@ body {
 	font-size: .85em;
 	padding: 10px;
 }
+
+
+.bxslider {
+    margin-top: -100px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    margin-left: 0px;
+}

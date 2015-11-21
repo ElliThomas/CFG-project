@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+
+
+<link href='dist/css/bootstrap.css' rel='stylesheet'> 
+
+<link href="style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<link href="gallery1.css" rel="stylesheet">
+
+<title>Agnese Gutovska Photography</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery.bxslider.min.js"></script>
+<link href="jquery.bxslider.css" rel="stylesheet" />
+<script src="dist/js/bootstrap.js"></script>
+<script src="gallery1.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">Agnese Gutovska Photography</a>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="gallery1.html">Connor</a></li>
+            <li><a href="gallery2.html">Esmee</a></li>
+            <li><a href="gallery3.html">Jodie</a></li>
+            <li><a href="gallery4.html">Louise</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="collages.html">Collages</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="personal.html">Personal</a></li>
+          </ul>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+   
+        <li class="newsletter">
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="top"></div>
+<section class="gallery">
+  <div class="row">
+    <ul>
+      <a href="#" class="close"></a>
+      <li>
+        <a href="#img1">
+          <img src="gallery/images/collages/collage1.jpg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="#img2">
+          <img src="gallery/images/collages/collage2.jpg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="#img3">
+          <img src="gallery/images/collages/collage3.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a class="image" href="#img4">
+          <img src="gallery/images/collages/collage4.jpg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div> <!-- / row -->
+
+  <!-- Item 01 -->
+  <div id="img1" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/collages/collage1.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 01 -->
+
+  <!-- Item 02 -->
+  <div id="img2" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/collages/collage2.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 02 -->
+
+    <!-- Item 03 -->
+  <div id="img3" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/collages/collage3.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 03 -->
+
+    <!-- Item 04 -->
+  <div id="img4" class="port">
+  
+    <div class="row">
+
+        <img src="gallery/images/collages/collage4.jpg" alt="">
+      </div>
+    </div> <!-- / row -->
+
+  </div> <!-- / Item 04 -->
+
+     
+  <!--JavaGallery-->
+
+  <script type="text/javascript">
+
+ $('.gallery ul li a').click(function() {
+     var itemID = $(this).attr('href');
+     $('.gallery ul').addClass('item_open');
+     $(itemID).addClass('item_open');
+     return false;
+ });
+ $('.close').click(function() {
+     $('.port, .gallery ul').removeClass('item_open');
+     return false;
+ });
+
+ $(".gallery ul li a").click(function() {
+     $('html, body').animate({
+         scrollTop: parseInt($("#top").offset().top)
+     }, 400);
+ });
+
+</script>
+
+<!--JavaGallery-->
+
+</body>  
+  </html>
