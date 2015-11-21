@@ -19,3 +19,14 @@ a:hover {
 a:active {
 	color: #777777;
 }
+
+.main {
+	overflow: auto;
+}
+
+img {
+	position: center;
+	max-width: 100%;
+    height: auto;	
+}
+
