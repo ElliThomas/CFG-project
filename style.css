@@ -7,6 +7,12 @@ h1 {
 	color: #777777;
 }
 
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	color: #777777;
+	font-size: 20px;
+}
+
 a:link {
 	color: #777777;
 }
@@ -19,3 +25,8 @@ a:hover {
 a:active {
 	color: #777777;
 }
+
+.cd-form .icon input, .cd-form .icon select, .cd-form .icon textarea {
+ 	padding-left: 54px !important;
+}
+
