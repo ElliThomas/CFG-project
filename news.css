@@ -44,7 +44,7 @@ body {
   top: 20px;
   right: 20px;
   z-index: 1;
-  background: #e74c3c;
+  background: #a9a9a9;
   width: 55px;
   height: 55px;
   padding: 12.5px 0;
@@ -93,7 +93,7 @@ body {
   position: absolute;
   top: -34px;
   left: 0;
-  background: #e74c3c;
+  background: #808080;
   padding: 10px 15px;
   color: #ffffff;
   font-size: 14px;
@@ -110,10 +110,14 @@ body {
 .post-module .post-content .sub_title {
   margin: 0;
   padding: 0 0 20px;
-  color: #e74c3c;
+  color: #808080;
   font-size: 20px;
   font-weight: 400;
 }
+.post-module .post-content a {
+  color: #8b0000;
+}
+
 .post-module .post-content .description {
   display: none;
   color: #666666;
