@@ -37,32 +37,7 @@ a {
 .gallery ul li {
   float: left;
   margin: 0 0.87719%;
-}
 
-header {
-  background-color: #84b4b1;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0 120px;
-}
-header h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 65px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  line-height: 0.8;
-  padding-top: 50px;
-  font-family: "Montserrat", sans-serif;
-}
-header h1 span {
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 25px;
-  line-height: 1;
-}
-header p {
-  padding-top: 30px;
 }
 
 .gallery {
@@ -129,7 +104,7 @@ header p {
   height: 100%;
   top: 0;
   left: 0;
-  padding-top: 100px;
+  padding-top: 0px;
   background: #ffffff;
   background-color: #fafafa;
   z-index: 103;
@@ -142,19 +117,14 @@ header p {
   transition: all 0.5s ease-in-out;
 }
 .port img {
-  width: 50%;
-}
-.port .description {
-  float: left;
-  width: 50%;
-  max-height: 100%;
-  padding: 0 40px 40px;
-  overflow: auto;
-}
-.port h1 {
-  font-size: 35px;
-  line-height: 2.3;
-  padding: 0;
+  max-width:80%;
+max-height:80%;
+  position: absolute;
+left: 50%;
+margin-right: -50%;
+top:30%;
+margin-bottom:-70%;
+    transform: translate(-50%, -50%)
 }
 .port > * {
   opacity: 0;
