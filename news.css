@@ -35,18 +35,18 @@ body {
   opacity: .6;
 }
 .post-module .thumbnail {
-  background: #000000;
+  background: #808080;
   height: 400px;
   overflow: hidden;
 }
 .post-module .thumbnail .date {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 20px;
   z-index: 1;
   background: #a9a9a9;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   padding: 12.5px 0;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;

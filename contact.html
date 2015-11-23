@@ -39,7 +39,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="about.html">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -53,7 +53,7 @@
             <li><a href="personal.html">Personal</a></li>
           </ul>
           <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
         </li>
       </ul>
 
@@ -78,21 +78,24 @@
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First and Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First and Last Name" value=" ">
+            <?php echo htmlspecialchars($_POST['name']); ?>
             <?php echo "<p class='text-danger'>$errName</p>";?>
         </div>
     </div>
     <div class="form-group">
         <label for="email" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value=" ">
+            <?php echo htmlspecialchars($_POST['email']); ?>
             <?php echo "<p class='text-danger'>$errEmail</p>";?>
         </div>
     </div>
     <div class="form-group">
         <label for="message" class="col-sm-2 control-label">Message</label>
         <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+            <textarea class="form-control" rows="4" name="message"></textarea>
+            <?php echo htmlspecialchars($_POST['message']);?>
             <?php echo "<p class='text-danger'>$errMessage</p>";?>
         </div>
     </div>
