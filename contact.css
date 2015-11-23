@@ -187,6 +187,20 @@ input[type=radio]:checked::after {
     text-align: center;
 }
 
+.contact {
+    text-color: #777777;
+}
+
+.btn-danger {
+    background-color: #999999;
+    border-color: #444444;
+}
+
+.btn-success {
+    background-color: #999999;
+    border-color: #444444;
+}
+
 
 /****** IGNORE ******/
 .fwpolice {
