@@ -30,3 +30,16 @@ a:active {
  	padding-left: 54px !important;
 }
 
+.contact {
+	text-color: #777777;
+}
+
+.btn-danger {
+	background-color: #999999;
+	border-color: #444444;
+}
+
+.btn-success {
+	background-color: #999999;
+	border-color: #444444;
+}
