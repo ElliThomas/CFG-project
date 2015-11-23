@@ -7,7 +7,7 @@
 <link href='dist/css/bootstrap.css' rel='stylesheet'> 
 
 <link href="style.css" rel="stylesheet">
-<link href="aboutstyle.css" rel="stylesheet">
+<link href="contact.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
 
@@ -66,58 +66,29 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
-<meta content="php, contact, form, thinking" name="keywords">
-<meta content="Contact us and let us know if we can help you out further." name="description">
-
-  
-</head>
-  
-<body>
- <form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First and Last Name" value=" ">
-            <?php echo htmlspecialchars($_POST['name']); ?>
-            <?php echo "<p class='text-danger'>$errName</p>";?>
-        </div>
+<div class="contact">
+  <form class="frame">
+    <label class="required">
+      Your Name
+      <input type="text" name="name" id="name" placeholder="John Stuart" required/>
+    </label>
+    <label class="required">
+      Your Email
+      <input type="email" name="name" id="name" placeholder="John@Stuart.com" required />
+    </label>
+    <label class="required">
+      Subject
+      <input type="text" name="name" id="name" placeholder="http://johnstuart.com" required />
+    </label>
+    <label class="required">
+      Your Message
+      <textarea name="message" rows="4" placeholder="I like your web-site..." required></textarea>
+    </label>
+    <div class="text-center add-sm-top">
+      <button class="btn btn-danger add-sm-right" type="reset"><i class="fa fa-times"></i> &nbsp; RESET</button>
+      <button class="btn btn-success" type="submit"><i class="fa fa-envelope"></i> &nbsp; SEND E-MAIL</button>
     </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value=" ">
-            <?php echo htmlspecialchars($_POST['email']); ?>
-            <?php echo "<p class='text-danger'>$errEmail</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"></textarea>
-            <?php echo htmlspecialchars($_POST['message']);?>
-            <?php echo "<p class='text-danger'>$errMessage</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-            <?php echo "<p class='text-danger'>$errHuman</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <?php echo $result; ?>    
-        </div>
-    </div>
-</form> 
-
-
+  </form>
+</div>
 </body>  
   </html>
